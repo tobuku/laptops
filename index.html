@@ -5,13 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Find Laptop Deals — Best Laptop Deals for Students, Gaming &amp; Budget 2026</title>
   <meta name="description" content="Find the best laptop deals in 2026. Compare top deals on gaming laptops, student laptops, and budget picks under $500. Updated daily.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Navigation -->
 <nav class="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Find<span>LaptopDeals</span></a>
+    <a href="index.html" class="nav-logo">
+      <svg width="36" height="36" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="64" height="64" rx="14" fill="#1a1a2e"/>
+        <path d="M16 18L48 18L50 42L14 42Z" stroke="#e94560" stroke-width="3" stroke-linejoin="round" fill="none"/>
+        <rect x="12" y="42" width="40" height="4" rx="2" fill="#e94560"/>
+        <text x="32" y="35" text-anchor="middle" fill="#fff" font-family="Inter,Arial,sans-serif" font-weight="bold" font-size="14">FLD</text>
+      </svg>
+      <span class="nav-logo-text">Find<span>LaptopDeals</span></span>
+    </a>
     <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
     <ul class="nav-links">
       <li><a href="students.html">For Students</a></li>
@@ -21,56 +33,213 @@
   </div>
 </nav>
 
+<!-- Hero -->
 <header class="hero">
-  <h1>Find the Best Laptop Deals</h1>
-  <p>We track prices, compare specs, and find the best laptop deals so you don't overpay. Updated for 2026.</p>
+  <div class="hero-bg">
+    <img src="img/25.jpg" alt="Laptop close-up" loading="eager">
+  </div>
+  <div class="hero-gradient"></div>
+  <div class="hero-content">
+    <div class="hero-badge gs-fade-up">Updated for 2026</div>
+    <h1 class="gs-fade-up">Find the Best<br><span class="highlight">Laptop Deals</span></h1>
+    <p class="gs-fade-up">We track prices, compare specs, and cut through the noise so you get the best laptop for your money — no overpaying.</p>
+    <div class="hero-ctas gs-fade-up">
+      <a href="gaming.html" class="btn btn-lg">Browse Gaming Deals &rarr;</a>
+      <a href="budget.html" class="btn btn-outline btn-lg">Under $500</a>
+    </div>
+    <div class="hero-stats gs-fade-up">
+      <div class="hero-stat">
+        <span class="number" data-count="18">0</span>
+        <span class="label">Laptops Reviewed</span>
+      </div>
+      <div class="hero-stat">
+        <span class="number" data-count="3">0</span>
+        <span class="label">Categories</span>
+      </div>
+      <div class="hero-stat">
+        <span class="number" data-count="15">0</span>
+        <span class="label">Years Experience</span>
+      </div>
+    </div>
+  </div>
 </header>
 
-<main class="section">
-  <h2 class="section-title">Browse by Category</h2>
-  <p class="section-subtitle">We test and compare so you don't have to. Pick your use case below.</p>
+<!-- Categories -->
+<section class="section">
+  <div class="section-header">
+    <span class="section-tag gs-fade-up">Categories</span>
+    <h2 class="section-title gs-fade-up">Browse by Use Case</h2>
+    <p class="section-subtitle gs-fade-up">Whether you're a student, a gamer, or just need a solid laptop without overspending — we've got you.</p>
+  </div>
 
   <div class="categories">
-
-    <a href="students.html" class="cat-card" style="color:inherit">
-      <div class="cat-card-img">&#127891;</div>
+    <a href="students.html" class="cat-card gs-fade-up" style="color:inherit">
+      <div class="cat-card-bg"><img src="img/15.jpg" alt="Student laptop"></div>
+      <div class="cat-card-overlay"></div>
       <div class="cat-card-body">
-        <h3>Best Laptops for Students</h3>
-        <p>Lightweight, long battery life, and affordable. Perfect for classes, research, and late-night study sessions.</p>
-        <span class="btn">See Deals</span>
+        <span class="cat-tag">For Students</span>
+        <h3>Best Laptop Deals for Students</h3>
+        <p>Lightweight, long battery life, and affordable. Perfect for school and beyond.</p>
+        <span class="cat-card-arrow">See Deals &rarr;</span>
       </div>
     </a>
 
-    <a href="gaming.html" class="cat-card" style="color:inherit">
-      <div class="cat-card-img gaming">&#127918;</div>
+    <a href="gaming.html" class="cat-card gs-fade-up" style="color:inherit">
+      <div class="cat-card-bg"><img src="img/30.jpg" alt="Gaming laptop"></div>
+      <div class="cat-card-overlay"></div>
       <div class="cat-card-body">
+        <span class="cat-tag">Gaming</span>
         <h3>Best Gaming Laptop Deals</h3>
-        <p>High-performance machines with dedicated GPUs, fast displays, and the power to run any game at max settings.</p>
-        <span class="btn">See Deals</span>
+        <p>Dedicated GPUs, fast displays, and raw power for every title.</p>
+        <span class="cat-card-arrow">See Deals &rarr;</span>
       </div>
     </a>
 
-    <a href="budget.html" class="cat-card" style="color:inherit">
-      <div class="cat-card-img budget">&#128176;</div>
+    <a href="budget.html" class="cat-card gs-fade-up" style="color:inherit">
+      <div class="cat-card-bg"><img src="img/20.jpg" alt="Budget laptop"></div>
+      <div class="cat-card-overlay"></div>
       <div class="cat-card-body">
-        <h3>Best Laptop Deals Under $500</h3>
-        <p>You don't need to break the bank. These affordable laptops punch well above their price point.</p>
-        <span class="btn">See Deals</span>
+        <span class="cat-tag">Budget</span>
+        <h3>Best Deals Under $500</h3>
+        <p>Great laptops that punch way above their price point.</p>
+        <span class="cat-card-arrow">See Deals &rarr;</span>
       </div>
     </a>
-
   </div>
-</main>
-
-<section class="section" style="padding-top:0">
-  <h2 class="section-title">Why Trust Find Laptop Deals?</h2>
-  <p class="section-subtitle" style="max-width:700px">We spend hundreds of hours researching specs, reading user reviews, and comparing real-world performance so you get straightforward advice — no fluff, no paid placements. Every recommendation is based on value for your money.</p>
 </section>
 
+<!-- Scrolling Image Gallery -->
+<div class="gallery-strip" aria-hidden="true">
+  <div class="gallery-strip-track">
+    <img src="img/1.jpg" alt="Laptop"><img src="img/6.jpg" alt="Laptop"><img src="img/8.jpg" alt="Laptop">
+    <img src="img/12.jpg" alt="Laptop"><img src="img/15.jpg" alt="Laptop"><img src="img/18.jpg" alt="Laptop">
+    <img src="img/22.jpg" alt="Laptop"><img src="img/35.jpg" alt="Laptop"><img src="img/38.jpg" alt="Laptop">
+    <img src="img/1.jpg" alt="Laptop"><img src="img/6.jpg" alt="Laptop"><img src="img/8.jpg" alt="Laptop">
+    <img src="img/12.jpg" alt="Laptop"><img src="img/15.jpg" alt="Laptop"><img src="img/18.jpg" alt="Laptop">
+    <img src="img/22.jpg" alt="Laptop"><img src="img/35.jpg" alt="Laptop"><img src="img/38.jpg" alt="Laptop">
+  </div>
+</div>
+
+<!-- Experience Section -->
+<section class="experience">
+  <div class="experience-inner">
+    <div class="experience-text">
+      <span class="section-tag gs-fade-up">Why Trust Us</span>
+      <h2 class="gs-fade-up">15+ Years Working with Laptops</h2>
+      <p class="gs-fade-up">We don't just read spec sheets — we've spent over 15 years repairing, testing, and diagnosing laptops from every major brand. From replacing hard drives to troubleshooting motherboards, we understand what makes a laptop last and what's just marketing hype.</p>
+      <p class="gs-fade-up">Every recommendation on this site is backed by real-world hands-on experience. We know which brands cut corners, which components fail first, and which machines genuinely deliver value.</p>
+      <div class="experience-stats gs-fade-up">
+        <div class="exp-stat">
+          <span class="number">500+</span>
+          <span class="label">Laptops Repaired</span>
+        </div>
+        <div class="exp-stat">
+          <span class="number">15+</span>
+          <span class="label">Years Experience</span>
+        </div>
+        <div class="exp-stat">
+          <span class="number">50+</span>
+          <span class="label">Models Tested</span>
+        </div>
+      </div>
+    </div>
+    <div class="experience-gallery gs-fade-right">
+      <div class="gallery-img"><img src="img/5.jpg" alt="Laptop diagnostics"></div>
+      <div class="gallery-img"><img src="img/12.jpg" alt="Laptop repair"></div>
+      <div class="gallery-img"><img src="img/6.jpg" alt="Laptop testing"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer class="footer">
-  <p>&copy; 2026 FindLaptopDeals.com. All rights reserved.</p>
-  <p style="margin-top:0.5rem; font-size:0.8rem;">As an Amazon Associate, we earn from qualifying purchases. <a href="https://pinterest.com/laptops" target="_blank">Follow us on Pinterest</a></p>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <p>&copy; 2026 FindLaptopDeals.com</p>
+    </div>
+    <div class="footer-right">
+      <a href="https://pinterest.com/laptops" target="_blank">Pinterest</a>
+      <a href="students.html">For Students</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="budget.html">Under $500</a>
+    </div>
+  </div>
+  <div class="footer-disclosure">
+    As an Amazon Associate, we earn from qualifying purchases. This does not affect our recommendations.
+  </div>
 </footer>
+
+<!-- GSAP -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+// Hero animations — staggered entrance
+gsap.utils.toArray('.hero-content .gs-fade-up').forEach((el, i) => {
+  gsap.fromTo(el,
+    { opacity: 0, y: 40 },
+    { opacity: 1, y: 0, duration: 0.9, delay: 0.2 + (i * 0.15), ease: 'power3.out' }
+  );
+});
+
+// Counter animation for hero stats
+document.querySelectorAll('.hero-stat .number[data-count]').forEach(el => {
+  const target = parseInt(el.dataset.count);
+  gsap.fromTo(el, { innerText: 0 }, {
+    innerText: target,
+    duration: 2,
+    delay: 1.2,
+    ease: 'power2.out',
+    snap: { innerText: 1 },
+    onUpdate: function() {
+      el.textContent = Math.round(gsap.getProperty(el, 'innerText')) + '+';
+    }
+  });
+});
+
+// Scroll-triggered fade-ups
+gsap.utils.toArray('.section .gs-fade-up, .experience .gs-fade-up').forEach(el => {
+  gsap.fromTo(el,
+    { opacity: 0, y: 40 },
+    {
+      opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+      scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' }
+    }
+  );
+});
+
+// Category cards stagger
+gsap.utils.toArray('.cat-card').forEach((el, i) => {
+  gsap.fromTo(el,
+    { opacity: 0, y: 50, scale: 0.95 },
+    {
+      opacity: 1, y: 0, scale: 1, duration: 0.7, delay: i * 0.12, ease: 'power3.out',
+      scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' }
+    }
+  );
+});
+
+// Experience gallery slide-in
+gsap.utils.toArray('.gs-fade-right').forEach(el => {
+  gsap.fromTo(el,
+    { opacity: 0, x: 60 },
+    {
+      opacity: 1, x: 0, duration: 1, ease: 'power3.out',
+      scrollTrigger: { trigger: el, start: 'top 80%', toggleActions: 'play none none none' }
+    }
+  );
+});
+
+// Nav background on scroll
+ScrollTrigger.create({
+  start: 'top -80',
+  onUpdate: (self) => {
+    document.querySelector('.nav').style.background =
+      self.progress > 0 ? 'rgba(15,15,26,0.98)' : 'rgba(15,15,26,0.95)';
+  }
+});
+</script>
 
 </body>
 </html>
