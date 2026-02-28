@@ -55,6 +55,21 @@
 <main class="section">
   <div class="disclosure"><strong>Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases.</div>
 
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">Who Should Buy a Touchscreen Laptop?</h2>
+    <p>Touchscreen laptops aren't just a gimmick — for the right user, they're a genuine productivity upgrade. If you take handwritten notes, sketch ideas, annotate PDFs, or just prefer tapping and swiping instead of trackpad gestures, a touchscreen 2-in-1 makes your workflow faster and more natural. Students, artists, and anyone who works with visual content will get the most value from a touch-enabled display.</p>
+    <p style="margin-top:1rem">The key decision is whether you need a 360-degree hinge (true 2-in-1) or just a touchscreen on a regular clamshell laptop. A 360° hinge lets you fold the laptop into tablet mode for drawing and reading, or tent mode for presentations. A standard touchscreen adds tap and scroll convenience without the extra weight and bulk of a convertible design.</p>
+    <h3 style="font-size:1.2rem;margin-top:2rem;margin-bottom:0.75rem">What We Look for in Touchscreen Laptops</h3>
+    <ul style="padding-left:1.25rem">
+      <li style="margin-bottom:0.5rem"><strong>Pen support and quality:</strong> Not all touchscreens work with styluses. We note which laptops support active pens, which include one in the box, and which ones have good pressure sensitivity for drawing and note-taking.</li>
+      <li style="margin-bottom:0.5rem"><strong>Hinge quality:</strong> On 2-in-1 laptops, the hinge holds the screen at whatever angle you set it. Cheap hinges wobble, sag over time, or feel loose. We test for firm, smooth hinge action that stays put.</li>
+      <li style="margin-bottom:0.5rem"><strong>Display technology:</strong> OLED panels offer the best touch experience with vibrant colors and deep blacks. IPS panels are good but can't match OLED's contrast. We note panel type and resolution for every pick.</li>
+      <li><strong>Weight in tablet mode:</strong> A 5-pound laptop folded into tablet mode is exhausting to hold. The best 2-in-1s keep weight under 3.5 lbs so tablet mode is actually usable for more than a few minutes.</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title gs-fade-up" style="margin-bottom:2rem">Best Touchscreen Laptops Right Now</h2>
+
   <div class="product-list">
 
     <article class="product-card gs-fade-up">
@@ -145,6 +160,16 @@
   </div>
 </main>
 
+<section class="section" style="padding-top:0">
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">Touchscreen Laptop Tips</h2>
+    <p><strong>Get a screen protector.</strong> Touchscreens pick up fingerprints and smudges fast. A matte screen protector reduces glare, resists fingerprints, and gives the screen a paper-like texture that feels better when writing with a stylus. They cost $10–$15 and make a noticeable difference.</p>
+    <p style="margin-top:1rem"><strong>Check if the pen is included.</strong> Some laptops include an active pen in the box (Lenovo Yoga, ASUS Zenbook Flip), while others sell it separately for $50–$100 (Microsoft Surface Pen, HP Tilt Pen). Factor this into your total cost when comparing models.</p>
+    <p style="margin-top:1rem"><strong>OLED battery trade-off.</strong> OLED touchscreens look incredible but use more battery than IPS panels, especially when displaying bright content. If battery life is your top priority, an IPS touchscreen will last 1–2 hours longer per charge. If display quality matters more, OLED is worth the trade-off.</p>
+    <p style="margin-top:1rem"><strong>Windows works great in tablet mode now.</strong> Windows 11 automatically switches to a touch-optimized interface when you fold a 2-in-1 into tablet mode — larger touch targets, an on-screen keyboard, and gesture navigation. It's come a long way and genuinely works well for casual browsing, reading, and note-taking.</p>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-left"><p>&copy; 2026 FindLaptopDeals.com</p></div>
@@ -160,7 +185,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray('.page-intro-content .gs-fade-up').forEach((el, i) => {
   gsap.fromTo(el, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, delay: 0.15 + (i * 0.12), ease: 'power3.out' });
 });
-gsap.utils.toArray('.product-card').forEach((el) => {
+gsap.utils.toArray('.product-card, .section .gs-fade-up').forEach((el) => {
   gsap.fromTo(el, { opacity: 0, y: 50, scale: 0.97 },
     { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' } });

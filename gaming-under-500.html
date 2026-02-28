@@ -57,6 +57,21 @@
     <strong>Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases. This doesn't affect our recommendations.
   </div>
 
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">Can You Actually Game on a $500 Laptop?</h2>
+    <p>Yes, but you need to set the right expectations. Under $500, you're not getting a machine that runs Cyberpunk 2077 at ultra settings. What you can get is a laptop that handles esports titles like Valorant, Fortnite, CS2, and League of Legends at playable frame rates — and that's what most gamers actually play. The key is knowing which corners to cut and which specs to prioritize.</p>
+    <p style="margin-top:1rem">At this price, the biggest decision is whether to go with integrated graphics or a budget dedicated GPU. Integrated graphics (like AMD's Radeon 780M or 680M) have gotten surprisingly capable — they'll run esports games at medium settings. A dedicated GPU like the GTX 1650 or RTX 2050 gives you a meaningful step up, but these are usually found at the very top of the $500 range, often on sale.</p>
+    <h3 style="font-size:1.2rem;margin-top:2rem;margin-bottom:0.75rem">What Matters Most Under $500</h3>
+    <ul style="padding-left:1.25rem">
+      <li style="margin-bottom:0.5rem"><strong>GPU (integrated or dedicated):</strong> This determines which games you can play. Integrated graphics = esports and older titles. A GTX 1650 or RTX 2050 = most games at medium settings.</li>
+      <li style="margin-bottom:0.5rem"><strong>RAM (aim for 16GB):</strong> Games use a lot of memory. 8GB works but will bottleneck newer titles. If the laptop has an upgradeable RAM slot, buy 8GB now and add more later.</li>
+      <li style="margin-bottom:0.5rem"><strong>Display refresh rate:</strong> A 120Hz or 144Hz screen makes games feel smoother. At $500, not every laptop has this, but the ones that do are worth the slight premium.</li>
+      <li><strong>SSD speed:</strong> An NVMe SSD cuts game load times dramatically compared to SATA SSDs. Most budget gaming laptops include NVMe drives now, but double-check before buying.</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title gs-fade-up" style="margin-bottom:2rem">Best Gaming Laptops Under $500</h2>
+
   <div class="product-list">
 
     <article class="product-card gs-fade-up">
@@ -182,6 +197,16 @@
   </div>
 </main>
 
+<section class="section" style="padding-top:0">
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">Tips for Budget Gaming</h2>
+    <p><strong>Lower your in-game settings.</strong> You don't need ultra graphics to enjoy a game. Dropping from high to medium settings can double your frame rate with minimal visual difference. Most competitive players actually prefer lower settings for cleaner visuals and less input lag.</p>
+    <p style="margin-top:1rem"><strong>Close background apps while gaming.</strong> On a budget laptop, every bit of RAM and CPU power matters. Close Chrome, Discord (or use the web version), and any unnecessary background processes. This alone can boost your FPS by 10–20%.</p>
+    <p style="margin-top:1rem"><strong>Upgrade the RAM yourself.</strong> If your laptop shipped with 8GB and has an open SO-DIMM slot, a $25 stick of RAM is the single best upgrade you can make. Going from 8GB to 16GB eliminates stuttering in most games.</p>
+    <p style="margin-top:1rem"><strong>Consider refurbished.</strong> A refurbished laptop that was $800 new can often be found for under $500. Manufacturer-certified refurbished units come with warranties and are thoroughly tested. This is how you get a proper gaming GPU at a budget price.</p>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-left"><p>&copy; 2026 FindLaptopDeals.com</p></div>
@@ -202,7 +227,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray('.page-intro-content .gs-fade-up').forEach((el, i) => {
   gsap.fromTo(el, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, delay: 0.15 + (i * 0.12), ease: 'power3.out' });
 });
-gsap.utils.toArray('.product-card').forEach((el) => {
+gsap.utils.toArray('.product-card, .section .gs-fade-up').forEach((el) => {
   gsap.fromTo(el, { opacity: 0, y: 50, scale: 0.97 },
     { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' } });

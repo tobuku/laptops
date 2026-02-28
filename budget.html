@@ -53,6 +53,21 @@
     <strong>Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases. This doesn't affect our recommendations — we only feature products we'd genuinely suggest.
   </div>
 
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">Can You Get a Good Laptop for Under $500?</h2>
+    <p>Yes — but you have to know what to prioritize. The sub-$500 market is full of laptops that look fine on paper but feel sluggish in practice. The difference between a good budget laptop and a bad one usually comes down to the storage type and RAM. An SSD is non-negotiable in 2026 — any laptop still using an HDD will feel painfully slow. And 8GB of RAM is the bare minimum for a smooth experience with multiple browser tabs and basic apps.</p>
+    <p style="margin-top:1rem">At this price range, you're making trade-offs. Display brightness, build materials, and speaker quality are where manufacturers cut costs first. That's fine — those are the right corners to cut. What you shouldn't compromise on is the processor and storage speed, because those determine how the laptop actually feels to use day-to-day.</p>
+    <h3 style="font-size:1.2rem;margin-top:2rem;margin-bottom:0.75rem">What We Prioritize Under $500</h3>
+    <ul style="padding-left:1.25rem">
+      <li style="margin-bottom:0.5rem"><strong>SSD storage (not HDD):</strong> This is the single biggest factor in how fast a budget laptop feels. A $350 laptop with an SSD will feel snappier than a $500 laptop with an HDD.</li>
+      <li style="margin-bottom:0.5rem"><strong>At least 8GB RAM:</strong> You can get away with 4GB for very basic tasks, but 8GB is what you need for a comfortable experience with Chrome, Office, and video calls running at the same time.</li>
+      <li style="margin-bottom:0.5rem"><strong>A capable processor:</strong> AMD Ryzen 5 and Intel Core i5 chips are the sweet spot at this price. Avoid Celeron and Pentium processors — they'll feel outdated within a year.</li>
+      <li><strong>Battery life over 8 hours:</strong> Budget laptops are often used on the go. We skip models that can't last a full workday without a charger.</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title gs-fade-up" style="margin-bottom:2rem">Best Budget Laptops Right Now</h2>
+
   <div class="product-list">
 
     <article class="product-card gs-fade-up">
@@ -202,6 +217,16 @@
   </div>
 </main>
 
+<section class="section" style="padding-top:0">
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">Budget Laptop Buying Tips</h2>
+    <p><strong>Consider a Chromebook if you live in the browser.</strong> If 90% of your work is Google Docs, email, YouTube, and web browsing, a Chromebook will feel faster and more responsive than a similarly-priced Windows laptop. ChromeOS is lighter, boots in seconds, and gets years of security updates. The trade-off is you can't install traditional Windows software.</p>
+    <p style="margin-top:1rem"><strong>Storage matters more than you think.</strong> A 128GB SSD will fill up fast once Windows updates, a few apps, and your files are on it. If you can stretch to a 256GB or 512GB model, you'll avoid the constant "low storage" warnings. Alternatively, a cheap 128GB laptop plus cloud storage works well if you have reliable internet.</p>
+    <p style="margin-top:1rem"><strong>Check if RAM is upgradeable.</strong> Some budget laptops solder the RAM to the motherboard, meaning you're stuck with what you bought. Others have an open RAM slot, letting you add another stick later for $20–$30. This turns an 8GB laptop into a 16GB laptop without replacing it.</p>
+    <p style="margin-top:1rem"><strong>Skip the extended warranty.</strong> At this price point, extended warranties often cost 20–30% of the laptop's price. That money is better saved toward your next laptop in 3–4 years. The manufacturer's standard warranty covers defects for the first year.</p>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-left"><p>&copy; 2026 FindLaptopDeals.com</p></div>
@@ -222,7 +247,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray('.page-intro-content .gs-fade-up').forEach((el, i) => {
   gsap.fromTo(el, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, delay: 0.15 + (i * 0.12), ease: 'power3.out' });
 });
-gsap.utils.toArray('.product-card').forEach((el) => {
+gsap.utils.toArray('.product-card, .section .gs-fade-up').forEach((el) => {
   gsap.fromTo(el,
     { opacity: 0, y: 50, scale: 0.97 },
     { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: 'power3.out',

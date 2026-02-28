@@ -53,6 +53,21 @@
     <strong>Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases. This doesn't affect our recommendations — we only feature products we'd genuinely suggest.
   </div>
 
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">What to Look for in a Gaming Laptop</h2>
+    <p>The GPU is the single most important component in a gaming laptop. Everything else — CPU, RAM, display — matters, but the graphics card determines what games you can play and at what settings. In 2026, the RTX 4050 is the entry point for serious gaming, the RTX 4060 hits the sweet spot for 1080p at high settings, and the RTX 4070 and above push into 1440p and ray tracing territory.</p>
+    <p style="margin-top:1rem">Beyond the GPU, pay attention to the display refresh rate. A 144Hz screen makes a noticeable difference in fast-paced shooters compared to 60Hz — once you see it, you can't go back. And don't overlook thermals: a laptop that throttles under load will underperform regardless of its specs on paper. We test for real-world sustained performance, not just benchmark numbers.</p>
+    <h3 style="font-size:1.2rem;margin-top:2rem;margin-bottom:0.75rem">How We Pick Gaming Laptops</h3>
+    <ul style="padding-left:1.25rem">
+      <li style="margin-bottom:0.5rem"><strong>GPU performance per dollar:</strong> We rank laptops by how much gaming power you get relative to what you pay. A $900 laptop with an RTX 4050 needs to justify itself against an $800 alternative.</li>
+      <li style="margin-bottom:0.5rem"><strong>Thermal performance:</strong> A gaming laptop that throttles under sustained load is a bad gaming laptop. We prioritize machines with good cooling systems that maintain consistent frame rates.</li>
+      <li style="margin-bottom:0.5rem"><strong>Display quality:</strong> Refresh rate, response time, and color accuracy all matter. We note which panels are standout and which are just acceptable for the price.</li>
+      <li><strong>Build and upgradeability:</strong> Can you add more RAM or swap the SSD later? Gaming laptops that let you upgrade extend their useful life by years.</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title gs-fade-up" style="margin-bottom:2rem">Our Top Gaming Laptop Picks</h2>
+
   <div class="product-list">
 
     <article class="product-card gs-fade-up">
@@ -202,6 +217,16 @@
   </div>
 </main>
 
+<section class="section" style="padding-top:0">
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">Gaming Laptop Buying Tips</h2>
+    <p><strong>Don't chase the highest-end GPU.</strong> Most gamers are perfectly happy with an RTX 4060. It runs every current game at 1080p high settings and even handles 1440p in many titles. The jump from a 4060 to a 4070 costs $300–$500 extra but only adds 15–25% more performance. Unless you're gaming at 4K or doing heavy 3D rendering, the mid-range is the smart buy.</p>
+    <p style="margin-top:1rem"><strong>16GB RAM is the minimum.</strong> Modern games regularly use 10–12GB of RAM. With 8GB, you'll see stuttering and longer load times. 16GB gives you headroom for the game plus Discord, a browser, and streaming software running in the background.</p>
+    <p style="margin-top:1rem"><strong>Battery life doesn't matter as much as you think.</strong> Gaming laptops drain their battery in 1–2 hours while gaming regardless of price. You'll always be plugged in during sessions. Focus your budget on the GPU and display instead of chasing better battery specs.</p>
+    <p style="margin-top:1rem"><strong>Buy last-gen for the best deals.</strong> When a new GPU generation launches, last-gen models drop 20–30% in price. An RTX 4060 laptop that was $1,100 six months ago might be $800 now. The performance is still excellent — you're just not paying the new-release premium.</p>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-left"><p>&copy; 2026 FindLaptopDeals.com</p></div>
@@ -222,7 +247,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray('.page-intro-content .gs-fade-up').forEach((el, i) => {
   gsap.fromTo(el, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, delay: 0.15 + (i * 0.12), ease: 'power3.out' });
 });
-gsap.utils.toArray('.product-card').forEach((el) => {
+gsap.utils.toArray('.product-card, .section .gs-fade-up').forEach((el) => {
   gsap.fromTo(el,
     { opacity: 0, y: 50, scale: 0.97 },
     { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: 'power3.out',

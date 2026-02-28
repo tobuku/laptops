@@ -55,6 +55,21 @@
 <main class="section">
   <div class="disclosure"><strong>Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases.</div>
 
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">Why $1,000 Is the Sweet Spot for Gaming Laptops</h2>
+    <p>The $800–$1,000 range is where gaming laptops stop being compromises and start being genuinely good. This is the price bracket where you get current-gen RTX 4050 and 4060 GPUs, 16GB of DDR5 RAM, and 144Hz displays as standard. You can play every major game at 1080p on high settings, and many titles at 1440p on medium. Two years ago, this level of performance cost $1,300+.</p>
+    <p style="margin-top:1rem">The RTX 4060 is the standout GPU at this price point. It delivers roughly 80% of the RTX 4070's performance at 60% of the price. For 1080p gaming — which is what most laptop displays run at — the 4060 is more than enough. Pair it with an i7 or Ryzen 7 processor and 16GB of RAM, and you have a machine that won't need upgrading for 3–4 years.</p>
+    <h3 style="font-size:1.2rem;margin-top:2rem;margin-bottom:0.75rem">What Separates Good from Great Under $1,000</h3>
+    <ul style="padding-left:1.25rem">
+      <li style="margin-bottom:0.5rem"><strong>RTX 4050 vs RTX 4060:</strong> The 4060 is 30–40% faster and well worth the extra $100–$150 if you can stretch your budget. It's the difference between medium and high settings in demanding games.</li>
+      <li style="margin-bottom:0.5rem"><strong>Cooling design:</strong> At this price, some laptops have dual-fan systems while others cut costs with single fans. Better cooling means the GPU sustains higher clock speeds for longer, directly translating to more consistent frame rates.</li>
+      <li style="margin-bottom:0.5rem"><strong>Display panel quality:</strong> Not all 144Hz panels are equal. IPS panels offer better color and viewing angles than TN panels. Some models at this price even offer QHD (2560x1440) resolution.</li>
+      <li><strong>Build quality and weight:</strong> Sub-$1,000 gaming laptops range from 4 lbs to 6 lbs. If you're carrying it to school or work, the lighter options are worth the trade-off in cooling capacity.</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title gs-fade-up" style="margin-bottom:2rem">Best Gaming Laptops Under $1,000</h2>
+
   <div class="product-list">
 
     <article class="product-card gs-fade-up">
@@ -145,6 +160,16 @@
   </div>
 </main>
 
+<section class="section" style="padding-top:0">
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">Getting the Most Out of Your Gaming Laptop</h2>
+    <p><strong>Use a cooling pad.</strong> A $20–$30 laptop cooling pad can drop temperatures by 5–10°C, which prevents thermal throttling and keeps your frame rates consistent during long sessions. It's the cheapest performance upgrade you can buy.</p>
+    <p style="margin-top:1rem"><strong>Plug in while gaming.</strong> Gaming laptops perform significantly worse on battery. Most switch to a lower power profile that reduces GPU and CPU performance by 30–50%. Always plug in for gaming sessions — battery mode is for browsing and light work.</p>
+    <p style="margin-top:1rem"><strong>Keep drivers updated.</strong> NVIDIA releases Game Ready drivers for major game launches that can improve performance by 5–15% in those titles. Set GeForce Experience to auto-update, or check manually once a month.</p>
+    <p style="margin-top:1rem"><strong>Add storage later if needed.</strong> Most gaming laptops in this range have a second M.2 SSD slot. Start with the 512GB that comes included, and when you need more space, adding a 1TB NVMe SSD costs around $60–$80. It's cheaper than paying $200 more upfront for the 1TB configuration.</p>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-left"><p>&copy; 2026 FindLaptopDeals.com</p></div>
@@ -162,7 +187,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray('.page-intro-content .gs-fade-up').forEach((el, i) => {
   gsap.fromTo(el, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, delay: 0.15 + (i * 0.12), ease: 'power3.out' });
 });
-gsap.utils.toArray('.product-card').forEach((el) => {
+gsap.utils.toArray('.product-card, .section .gs-fade-up').forEach((el) => {
   gsap.fromTo(el, { opacity: 0, y: 50, scale: 0.97 },
     { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' } });

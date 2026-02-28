@@ -55,6 +55,21 @@
 <main class="section">
   <div class="disclosure"><strong>Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases.</div>
 
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">What $1,000 Gets You in 2026</h2>
+    <p>The under-$1,000 bracket is where laptops go from "good enough" to genuinely premium. At this price, you get features that used to be reserved for $1,500+ machines: OLED displays with perfect blacks and vivid colors, all-metal builds that feel solid and look professional, processors fast enough for anything short of heavy video editing, and battery life that lasts a full workday.</p>
+    <p style="margin-top:1rem">This is the ideal range for professionals, creatives, and power users who want a laptop that does everything well. Whether you're running spreadsheets, editing photos, coding, or just want a machine that feels fast and premium — the $700–$1,000 range delivers the best balance of performance, build quality, and features without the diminishing returns of flagship pricing.</p>
+    <h3 style="font-size:1.2rem;margin-top:2rem;margin-bottom:0.75rem">What to Expect at This Price</h3>
+    <ul style="padding-left:1.25rem">
+      <li style="margin-bottom:0.5rem"><strong>OLED or high-res displays:</strong> Several laptops under $1,000 now come with 2.8K OLED panels. The difference in color accuracy and contrast compared to a standard IPS screen is dramatic — especially for photo editing, streaming, and general visual quality.</li>
+      <li style="margin-bottom:0.5rem"><strong>16GB RAM standard:</strong> At this price, 16GB DDR5 or LPDDR5 is the norm. This is more than enough for heavy multitasking, browser-heavy workflows, and light creative work.</li>
+      <li style="margin-bottom:0.5rem"><strong>Premium build materials:</strong> Aluminum chassis, slim bezels, and weight under 3.5 lbs are common. These laptops look and feel like they cost more than they do.</li>
+      <li><strong>All-day battery life:</strong> Expect 10–15 hours of real-world use. Many models at this price can get through a full workday and then some without reaching for the charger.</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title gs-fade-up" style="margin-bottom:2rem">Best Laptops Under $1,000</h2>
+
   <div class="product-list">
 
     <article class="product-card gs-fade-up">
@@ -145,6 +160,16 @@
   </div>
 </main>
 
+<section class="section" style="padding-top:0">
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">Choosing Between MacOS and Windows</h2>
+    <p><strong>MacBook Air M3 vs Windows alternatives.</strong> This is the most common question at this price point. The MacBook Air M3 has unbeatable battery life and a beautiful display, but it starts with only 8GB RAM and 256GB storage. For the same $949, you can get a Windows laptop with 16GB RAM, 512GB SSD, and a comparable OLED display. The trade-off is build quality and battery life — the MacBook wins on both.</p>
+    <p style="margin-top:1rem"><strong>If you need specific software, check compatibility first.</strong> Most professional software works on both platforms now, but some tools (especially niche engineering or business software) are Windows-only. On the flip side, if you're in the Apple ecosystem with an iPhone and AirPods, macOS's seamless integration is a genuine productivity boost.</p>
+    <p style="margin-top:1rem"><strong>Don't overlook the display.</strong> At this price, OLED displays are available from both Windows and Mac. If you're doing any color-sensitive work — photography, design, or even just watching a lot of content — an OLED panel is worth prioritizing. The difference in contrast and color accuracy compared to standard IPS is significant.</p>
+    <p style="margin-top:1rem"><strong>Future-proof with 16GB RAM.</strong> This is especially important if you're choosing the MacBook Air, which can't be upgraded later. The 8GB base model will feel its age in 2–3 years. If you go Mac, consider the $200 upgrade to 16GB — or choose a Windows laptop that includes it at the base price.</p>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-left"><p>&copy; 2026 FindLaptopDeals.com</p></div>
@@ -160,7 +185,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray('.page-intro-content .gs-fade-up').forEach((el, i) => {
   gsap.fromTo(el, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, delay: 0.15 + (i * 0.12), ease: 'power3.out' });
 });
-gsap.utils.toArray('.product-card').forEach((el) => {
+gsap.utils.toArray('.product-card, .section .gs-fade-up').forEach((el) => {
   gsap.fromTo(el, { opacity: 0, y: 50, scale: 0.97 },
     { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' } });
