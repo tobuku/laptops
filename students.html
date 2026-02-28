@@ -53,6 +53,21 @@
     <strong>Disclosure:</strong> As an Amazon Associate, we earn from qualifying purchases. This doesn't affect our recommendations — we only feature products we'd genuinely suggest.
   </div>
 
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">How to Pick the Right Student Laptop</h2>
+    <p>Choosing a laptop for school comes down to three things: battery life, weight, and whether it can handle your workload without slowing down. Most students don't need a powerhouse — a solid mid-range laptop with 8–16GB of RAM and an SSD will handle essays, research, video calls, and streaming without breaking a sweat.</p>
+    <p style="margin-top:1rem">That said, your major matters. If you're studying computer science, engineering, or anything that involves running virtual machines or heavy software, aim for 16GB of RAM and a newer processor. Art and design students should prioritize display quality — an OLED or high-resolution IPS panel makes a real difference for color-accurate work. For everyone else, the priority should be battery life and portability.</p>
+    <h3 style="font-size:1.2rem;margin-top:2rem;margin-bottom:0.75rem">What We Look for in a Student Laptop</h3>
+    <ul style="padding-left:1.25rem">
+      <li style="margin-bottom:0.5rem"><strong>Battery life (8+ hours):</strong> You shouldn't have to fight for an outlet in the library. Every laptop on this list lasts a full day of classes on a single charge.</li>
+      <li style="margin-bottom:0.5rem"><strong>Weight under 4.5 lbs:</strong> You're carrying this in a backpack every day. A heavy laptop gets old fast, especially if you're walking across campus between classes.</li>
+      <li style="margin-bottom:0.5rem"><strong>At least 8GB RAM and 256GB SSD:</strong> This is the minimum for a smooth experience in 2026. Anything less and you'll notice lag with multiple browser tabs and apps open.</li>
+      <li><strong>A good keyboard:</strong> You'll be typing thousands of words a week. We skip laptops with cramped or mushy keyboards, no matter how cheap they are.</li>
+    </ul>
+  </div>
+
+  <h2 class="section-title gs-fade-up" style="margin-bottom:2rem">Our Top Student Laptop Picks</h2>
+
   <div class="product-list">
 
     <article class="product-card gs-fade-up">
@@ -202,6 +217,16 @@
   </div>
 </main>
 
+<section class="section" style="padding-top:0">
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+    <h2 style="font-size:1.5rem;margin-bottom:1rem">Student Laptop Buying Tips</h2>
+    <p><strong>Check your school's requirements first.</strong> Some programs require specific operating systems or minimum specs. Engineering programs often require Windows for software like MATLAB or SolidWorks, while some creative programs prefer macOS. Check with your department before buying so you don't end up with a laptop that can't run required software.</p>
+    <p style="margin-top:1rem"><strong>Use your student discount.</strong> Apple, Dell, Lenovo, and HP all offer education pricing that can save you $50–$200. Apple's back-to-school deal usually includes free AirPods. Most brands just need a .edu email to verify — it takes two minutes and the savings are real.</p>
+    <p style="margin-top:1rem"><strong>Buy during back-to-school season.</strong> July through September is when laptop prices drop the most for student-oriented models. Retailers compete hard during this window, and you'll often find better deals than Black Friday on the mid-range laptops students actually need.</p>
+    <p style="margin-top:1rem"><strong>Don't overbuy.</strong> A $1,500 laptop won't help you write better papers. If you're a general studies, business, or humanities student, a $500–$700 laptop with 16GB RAM and an SSD is more than enough. Put the savings toward textbooks or a good pair of headphones for the library.</p>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-left"><p>&copy; 2026 FindLaptopDeals.com</p></div>
@@ -225,8 +250,8 @@ gsap.utils.toArray('.page-intro-content .gs-fade-up').forEach((el, i) => {
   gsap.fromTo(el, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, delay: 0.15 + (i * 0.12), ease: 'power3.out' });
 });
 
-// Product cards stagger on scroll
-gsap.utils.toArray('.product-card').forEach((el, i) => {
+// Product cards and sections stagger on scroll
+gsap.utils.toArray('.product-card, .section .gs-fade-up').forEach((el) => {
   gsap.fromTo(el,
     { opacity: 0, y: 50, scale: 0.97 },
     {
