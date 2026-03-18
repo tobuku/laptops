@@ -28,8 +28,8 @@ Last updated: 2026-03-17
 9. deals.html — 5 current deals with sale pricing
 10. black-friday.html — 4 Black Friday 2026 predictions
 11. privacy.html — Privacy policy (required for Pinterest API app)
-12. laptop-backpacks.html — Best laptop backpacks guide
-13. portable-power-banks.html — Best portable power banks guide
+12. laptop-backpacks.html — Best laptop backpacks guide (11 products, linked from homepage)
+13. portable-power-banks.html — Best portable power banks guide (8 products, linked from homepage)
 
 ## Design & Tech Stack
 - **Font:** Inter (Google Fonts)
