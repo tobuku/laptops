@@ -1,0 +1,5 @@
+.env
+.gsc-credentials/
+*.pyc
+__pycache__/
+.claude/
