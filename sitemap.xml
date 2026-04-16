@@ -25,9 +25,22 @@
   <url><loc>https://findlaptopdeals.com/laptop-backpacks.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://findlaptopdeals.com/portable-power-banks.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://findlaptopdeals.com/compare.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Phase 3: VS comparison pages -->
   <url><loc>https://findlaptopdeals.com/macbook-air-m3-vs-dell-xps-13.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://findlaptopdeals.com/macbook-air-vs-surface-laptop.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://findlaptopdeals.com/lenovo-ideapad-vs-hp-pavilion.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://findlaptopdeals.com/acer-aspire-5-vs-asus-vivobook.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://findlaptopdeals.com/chromebook-vs-windows-laptop.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Phase 4A: New VS comparison pages -->
+  <url><loc>https://findlaptopdeals.com/asus-rog-vs-lenovo-legion.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://findlaptopdeals.com/macbook-pro-vs-dell-xps-15.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://findlaptopdeals.com/rtx-4060-vs-rtx-4070-laptop.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://findlaptopdeals.com/laptop-vs-tablet.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://findlaptopdeals.com/hp-spectre-vs-dell-xps-15.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Phase 4B: Use-case pages -->
+  <url><loc>https://findlaptopdeals.com/best-laptop-for-nursing-students.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://findlaptopdeals.com/best-laptop-for-video-editing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://findlaptopdeals.com/best-laptop-for-graphic-design.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://findlaptopdeals.com/best-laptop-for-zoom-meetings.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://findlaptopdeals.com/best-laptop-for-photo-editing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

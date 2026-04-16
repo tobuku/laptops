@@ -153,6 +153,91 @@
       </div>
     </article>
 
+    <article class="product-card gs-fade-up">
+      <div class="product-img">
+        <img src="img/42.jpg" alt="ASUS ROG vs Lenovo Legion gaming laptops">
+      </div>
+      <div class="product-body">
+        <span class="product-badge">Gaming</span>
+        <h3>ASUS ROG Strix G16 vs Lenovo Legion 5i Pro</h3>
+        <div class="product-specs">
+          <span class="spec-tag">~$1,699 vs ~$1,499</span>
+          <span class="spec-tag">RTX 4070 Ti Super vs RTX 4070</span>
+          <span class="spec-tag">QHD+ vs 2.5K 240Hz</span>
+        </div>
+        <p style="margin:1rem 0;line-height:1.7;color:var(--text-light)">ASUS ROG has the better GPU. Lenovo Legion has the better value. At 1440p gaming, the $200 difference is hard to justify. At 4K, the RTX 4070 Ti Super gap opens up.</p>
+        <a href="asus-rog-vs-lenovo-legion.html" class="btn">Read Comparison &rarr;</a>
+      </div>
+    </article>
+
+    <article class="product-card gs-fade-up">
+      <div class="product-img">
+        <img src="img/5.jpg" alt="MacBook Pro M3 Pro vs Dell XPS 15">
+      </div>
+      <div class="product-body">
+        <span class="product-badge">Premium</span>
+        <h3>MacBook Pro M3 Pro vs Dell XPS 15</h3>
+        <div class="product-specs">
+          <span class="spec-tag">~$1,999 vs ~$1,799</span>
+          <span class="spec-tag">22hr vs 13hr battery</span>
+          <span class="spec-tag">14" vs 15.6" OLED</span>
+        </div>
+        <p style="margin:1rem 0;line-height:1.7;color:var(--text-light)">MacBook Pro M3 Pro wins on battery, sustained performance, and video editing speed. Dell XPS 15 wins on display size, Windows compatibility, and dedicated GPU. Creative pro showdown.</p>
+        <a href="macbook-pro-vs-dell-xps-15.html" class="btn">Read Comparison &rarr;</a>
+      </div>
+    </article>
+
+    <article class="product-card gs-fade-up">
+      <div class="product-img">
+        <img src="img/45.jpg" alt="RTX 4060 vs RTX 4070 laptop GPU">
+      </div>
+      <div class="product-body">
+        <span class="product-badge value">Gaming</span>
+        <h3>RTX 4060 vs RTX 4070 Laptop</h3>
+        <div class="product-specs">
+          <span class="spec-tag">$800–$1,100 vs $1,200–$1,600</span>
+          <span class="spec-tag">25–35% perf gap at 1440p</span>
+          <span class="spec-tag">Both: 8GB GDDR6</span>
+        </div>
+        <p style="margin:1rem 0;line-height:1.7;color:var(--text-light)">Is the RTX 4070 worth $300–$400 more? For 1080p gaming — no. For 1440p or 4K at max settings — yes. Here's the honest breakdown with real gaming numbers.</p>
+        <a href="rtx-4060-vs-rtx-4070-laptop.html" class="btn">Read Comparison &rarr;</a>
+      </div>
+    </article>
+
+    <article class="product-card gs-fade-up">
+      <div class="product-img">
+        <img src="img/54.jpg" alt="Laptop vs Tablet for college students">
+      </div>
+      <div class="product-body">
+        <span class="product-badge popular">Evergreen</span>
+        <h3>Laptop vs Tablet for College</h3>
+        <div class="product-specs">
+          <span class="spec-tag">$429 vs $898 total</span>
+          <span class="spec-tag">Full software vs iPadOS</span>
+          <span class="spec-tag">Keyboard included vs add-on</span>
+        </div>
+        <p style="margin:1rem 0;line-height:1.7;color:var(--text-light)">A laptop costs less and does more for most students. A tablet is better for handwritten notes and reading. The right answer depends on your major — here's the breakdown by field of study.</p>
+        <a href="laptop-vs-tablet.html" class="btn">Read Comparison &rarr;</a>
+      </div>
+    </article>
+
+    <article class="product-card gs-fade-up">
+      <div class="product-img">
+        <img src="img/68.jpg" alt="HP Spectre x360 vs Dell XPS 15">
+      </div>
+      <div class="product-body">
+        <span class="product-badge">Premium</span>
+        <h3>HP Spectre x360 vs Dell XPS 15</h3>
+        <div class="product-specs">
+          <span class="spec-tag">~$1,599 vs ~$1,799</span>
+          <span class="spec-tag">2-in-1 + stylus vs clamshell</span>
+          <span class="spec-tag">Arc GPU vs RTX 4060</span>
+        </div>
+        <p style="margin:1rem 0;line-height:1.7;color:var(--text-light)">HP Spectre wins on versatility and price. Dell XPS 15 wins on GPU power. Both have gorgeous OLED displays. The right choice comes down to whether you need a dedicated GPU.</p>
+        <a href="hp-spectre-vs-dell-xps-15.html" class="btn">Read Comparison &rarr;</a>
+      </div>
+    </article>
+
   </div>
 </main>
 
@@ -183,6 +268,18 @@ gsap.utils.toArray('.product-card, .section .gs-fade-up').forEach((el) => {
   gsap.fromTo(el, { opacity: 0, y: 50, scale: 0.97 },
     { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' } });
+});
+</script>
+<script>
+document.querySelectorAll('a[href*="amazon.com"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'affiliate_click', {
+        'link_text': link.innerText.trim().substring(0, 50),
+        'page_path': window.location.pathname
+      });
+    }
+  });
 });
 </script>
 </body>
