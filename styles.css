@@ -826,6 +826,14 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 2rem;
   margin-bottom: 3rem;
 }
+/* Each card inside vs-cards stacks vertically — image top, body below */
+.vs-cards .product-card {
+  grid-template-columns: 1fr;
+}
+.vs-cards .product-img {
+  min-height: 220px;
+  max-height: 220px;
+}
 @media (max-width: 768px) { .vs-cards { grid-template-columns: 1fr; } }
 
 /* === Responsive === */
@@ -836,7 +844,7 @@ img { max-width: 100%; height: auto; display: block; }
   .experience-gallery { order: -1; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-links {
     display: none;
     flex-direction: column;
