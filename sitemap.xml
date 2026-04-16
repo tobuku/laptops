@@ -13,6 +13,10 @@
   <url><loc>https://findlaptopdeals.com/under-1000.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://findlaptopdeals.com/touchscreen.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://findlaptopdeals.com/black-friday.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://findlaptopdeals.com/cyber-monday.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://findlaptopdeals.com/chromebook.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://findlaptopdeals.com/under-300.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://findlaptopdeals.com/lightweight.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://findlaptopdeals.com/laptop-backpacks.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://findlaptopdeals.com/portable-power-banks.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
