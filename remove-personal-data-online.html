@@ -23,25 +23,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;max-width:800px;margin:2rem auto 3rem;text-align:center}
-    .stat-card{background:linear-gradient(135deg,#1a1a2e,#16213e);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:2rem 1.5rem}
+    .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;max-width:800px;margin:1.5rem auto 2rem;text-align:center}
+    .stat-card{background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:16px;padding:2rem 1.5rem}
     .stat-card .stat-num{font-size:2.5rem;font-weight:800;background:linear-gradient(135deg,#e94560,#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
-    .stat-card .stat-label{color:#94a3b8;font-size:.85rem;margin-top:.5rem;line-height:1.4}
-    .callout-box{max-width:800px;margin:2rem auto;padding:1.5rem 2rem;border-radius:12px;line-height:1.7;font-size:.95rem}
-    .callout-warning{background:linear-gradient(135deg,rgba(233,69,96,.1),rgba(255,107,107,.05));border-left:4px solid #e94560;color:#e2e8f0}
-    .callout-info{background:linear-gradient(135deg,rgba(74,108,247,.1),rgba(74,108,247,.05));border-left:4px solid #4a6cf7;color:#e2e8f0}
-    .callout-box strong{color:#fff}
-    .banner-break{text-align:center;margin:2.5rem auto;max-width:800px}
+    .stat-card .stat-label{color:#ccc;font-size:.85rem;margin-top:.5rem;line-height:1.4}
+    .callout-box{max-width:800px;margin:1.5rem auto;padding:1.5rem 2rem;border-radius:12px;line-height:1.7;font-size:.95rem}
+    .callout-warning{background:#fef2f2;border-left:4px solid #e94560;color:#1e293b}
+    .callout-info{background:#eff6ff;border-left:4px solid #4a6cf7;color:#1e293b}
+    .callout-box strong{color:#0f172a}
+    .banner-break{text-align:center;margin:1.5rem auto;max-width:800px;min-height:0}
     .banner-break a{display:inline-block;border-radius:8px;overflow:hidden;transition:transform .2s,box-shadow .2s}
-    .banner-break a:hover{transform:scale(1.02);box-shadow:0 4px 20px rgba(233,69,96,.3)}
+    .banner-break a:hover{transform:scale(1.02);box-shadow:0 4px 20px rgba(0,0,0,.15)}
     .banner-break img{display:block;max-width:100%;height:auto}
-    .step-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;max-width:800px;margin:2rem auto 3rem}
-    .step-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:1.5rem}
-    .step-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:linear-gradient(135deg,#4a6cf7,#6366f1);border-radius:50%;font-weight:700;font-size:.9rem;margin-bottom:.75rem}
-    .step-item h4{font-size:1rem;margin-bottom:.5rem;color:#fff}
-    .step-item p{font-size:.88rem;color:#94a3b8;line-height:1.6}
-    .divider{max-width:800px;margin:0 auto;height:1px;background:linear-gradient(90deg,transparent,rgba(233,69,96,.3),rgba(74,108,247,.3),transparent)}
-    .img-break{max-width:800px;margin:2rem auto;border-radius:12px;overflow:hidden;position:relative}
+    .step-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;max-width:800px;margin:1.5rem auto 2rem}
+    .step-item{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1.5rem}
+    .step-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:linear-gradient(135deg,#4a6cf7,#6366f1);border-radius:50%;font-weight:700;font-size:.9rem;margin-bottom:.75rem;color:#fff}
+    .step-item h4{font-size:1rem;margin-bottom:.5rem;color:#0f172a}
+    .step-item p{font-size:.88rem;color:#475569;line-height:1.6}
+    .divider{max-width:800px;margin:0 auto;height:1px;background:linear-gradient(90deg,transparent,#e2e8f0,transparent)}
+    .img-break{max-width:800px;margin:1.5rem auto;border-radius:12px;overflow:hidden;position:relative}
     .img-break img{width:100%;height:220px;object-fit:cover;display:block;filter:brightness(.7)}
     .img-break .img-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(26,26,46,.7),rgba(22,33,62,.6))}
     .img-break .img-overlay p{color:#fff;font-size:1.3rem;font-weight:700;text-align:center;padding:0 2rem;line-height:1.4;max-width:500px}
@@ -133,7 +133,7 @@
   <!-- INCOGNI BANNER  - 970x250 leaderboard -->
   <div class="banner-break gs-fade-up">
     <a href="https://www.kqzyfj.com/click-101818803-15718688" target="_blank" rel="nofollow noopener" class="incogni-banner">
-      <img src="https://www.ftjcfx.com/image-101818803-15718688" width="970" height="250" alt="Incogni - Personal Data Removal Service" style="border-radius:8px;max-width:100%;height:auto">
+      <img src="https://www.ftjcfx.com/image-101818803-15718688" width="970" height="250" alt="Incogni - Personal Data Removal Service" style="border-radius:8px;max-width:100%;height:auto" onerror="this.parentElement.parentElement.style.display='none'">
     </a>
   </div>
 
@@ -175,7 +175,7 @@
 </main>
 
 <!-- HOW IT WORKS  - STEP CARDS -->
-<section class="section" style="padding-top:1rem">
+<section class="section" style="padding-top:0">
   <h2 class="section-title gs-fade-up" style="margin-bottom:.5rem">How It Actually Works</h2>
   <p class="section-subtitle gs-fade-up" style="margin-bottom:2rem">Four steps. Two minutes of your time.</p>
 
@@ -205,7 +205,7 @@
   <!-- SECOND BANNER  - 336x280 rectangle -->
   <div class="banner-break gs-fade-up">
     <a href="https://www.jdoqocy.com/click-101818803-15718682" target="_blank" rel="nofollow noopener" class="incogni-banner">
-      <img src="https://www.awltovhc.com/image-101818803-15718682" width="336" height="280" alt="Incogni - Remove Your Personal Data" style="border-radius:8px;max-width:100%;height:auto">
+      <img src="https://www.awltovhc.com/image-101818803-15718682" width="336" height="280" alt="Incogni - Remove Your Personal Data" style="border-radius:8px;max-width:100%;height:auto" onerror="this.parentElement.parentElement.style.display='none'">
     </a>
   </div>
 </section>
@@ -218,7 +218,7 @@
   </div>
 </div>
 
-<section class="section" style="padding-top:1rem">
+<section class="section" style="padding-top:0">
   <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 2rem;line-height:1.8">
     <h2 style="font-size:1.5rem;margin-bottom:1rem">This Is Only Half the Equation</h2>
     <p>Removing your existing data is important, but it doesn't stop new data from being collected. Every time you connect to public WiFi without a VPN, browse without encryption, or let your ISP log your activity, you're feeding the same pipeline that put your info on those broker sites in the first place.</p>
