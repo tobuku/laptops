@@ -22,6 +22,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;max-width:800px;margin:2rem auto 3rem;text-align:center}
+    .stat-card{background:linear-gradient(135deg,#1a1a2e,#16213e);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:2rem 1.5rem}
+    .stat-card .stat-num{font-size:2.5rem;font-weight:800;background:linear-gradient(135deg,#e94560,#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1}
+    .stat-card .stat-label{color:#94a3b8;font-size:.85rem;margin-top:.5rem;line-height:1.4}
+    .callout-box{max-width:800px;margin:2rem auto;padding:1.5rem 2rem;border-radius:12px;line-height:1.7;font-size:.95rem}
+    .callout-warning{background:linear-gradient(135deg,rgba(233,69,96,.1),rgba(255,107,107,.05));border-left:4px solid #e94560;color:#e2e8f0}
+    .callout-info{background:linear-gradient(135deg,rgba(74,108,247,.1),rgba(74,108,247,.05));border-left:4px solid #4a6cf7;color:#e2e8f0}
+    .callout-box strong{color:#fff}
+    .banner-break{text-align:center;margin:2.5rem auto;max-width:800px}
+    .banner-break a{display:inline-block;border-radius:8px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+    .banner-break a:hover{transform:scale(1.02);box-shadow:0 4px 20px rgba(233,69,96,.3)}
+    .banner-break img{display:block;max-width:100%;height:auto}
+    .step-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;max-width:800px;margin:2rem auto 3rem}
+    .step-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:1.5rem}
+    .step-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:linear-gradient(135deg,#4a6cf7,#6366f1);border-radius:50%;font-weight:700;font-size:.9rem;margin-bottom:.75rem}
+    .step-item h4{font-size:1rem;margin-bottom:.5rem;color:#fff}
+    .step-item p{font-size:.88rem;color:#94a3b8;line-height:1.6}
+    .divider{max-width:800px;margin:0 auto;height:1px;background:linear-gradient(90deg,transparent,rgba(233,69,96,.3),rgba(74,108,247,.3),transparent)}
+    .img-break{max-width:800px;margin:2rem auto;border-radius:12px;overflow:hidden;position:relative}
+    .img-break img{width:100%;height:220px;object-fit:cover;display:block;filter:brightness(.7)}
+    .img-break .img-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(26,26,46,.7),rgba(22,33,62,.6))}
+    .img-break .img-overlay p{color:#fff;font-size:1.3rem;font-weight:700;text-align:center;padding:0 2rem;line-height:1.4;max-width:500px}
+    @media(max-width:600px){.stat-card .stat-num{font-size:2rem}.step-grid{grid-template-columns:1fr}.img-break img{height:160px}.img-break .img-overlay p{font-size:1rem}}
+  </style>
 </head>
 <body>
 
@@ -43,7 +68,7 @@
 </nav>
 
 <header class="page-intro">
-  <div class="page-intro-bg"><img src="img/91.jpg" alt="" loading="eager"></div>
+  <div class="page-intro-bg"><img src="img/30.jpg" alt="" loading="eager"></div>
   <div class="page-intro-gradient"></div>
   <div class="page-intro-content">
     <span class="section-tag gs-fade-up">Privacy &amp; Security</span>
@@ -56,30 +81,67 @@
 <main class="section">
   <div class="disclosure"><strong>Disclosure:</strong> We earn commissions from some links on this page. This doesn't affect our recommendations or editorial independence.</div>
 
-  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+  <!-- STAT CARDS -->
+  <div class="stat-grid gs-fade-up">
+    <div class="stat-card">
+      <div class="stat-num">4,000+</div>
+      <div class="stat-label">Data broker companies operating in the US</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">$240B</div>
+      <div class="stat-label">Estimated annual revenue of the data broker industry</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">~1,500</div>
+      <div class="stat-label">Data points collected per person on average</div>
+    </div>
+  </div>
+
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 2rem;line-height:1.8">
     <h2 style="font-size:1.5rem;margin-bottom:1rem">The Data Broker Problem</h2>
     <p>I Googled my own name a while back and found my home address, phone number, and a list of my relatives on a site called Spokeo. I'd never signed up for it. Never even heard of it. That was my introduction to data brokers — companies like WhitePages, BeenVerified, and Intelius that scrape public records, purchase histories, and app data, then package it all into profiles they sell to basically anyone.</p>
     <p style="margin-top:1rem">There are over 4,000 of these companies operating in the US alone. They sell your full name, home address, phone number, email, estimated income, and even your relatives' names to marketers, insurance companies, background check services, and random people willing to pay a few bucks. It's a billion-dollar industry built entirely on your personal information.</p>
     <p style="margin-top:1rem">If you use a laptop — especially one you carry between home, work, coffee shops, and airports — you're generating more data than most people. Every network you connect to, every browser-based service you log into, every online purchase. All of it feeds the data broker pipeline.</p>
-
-    <h3 style="font-size:1.2rem;margin-top:2rem;margin-bottom:0.75rem">Why This Actually Matters</h3>
-    <p>The most obvious consequence is spam. If you've noticed robocalls getting worse over the past few years, data brokers are the main reason — they're the #1 source of phone numbers for robocallers and spam texters. Remove your data from those sites and the calls drop noticeably.</p>
-    <p style="margin-top:0.75rem">But it goes deeper than annoying phone calls. The more personal info floating around online, the easier it is for someone to impersonate you, open accounts in your name, or guess your security questions. People-search sites make it trivial to find someone's home address — a real safety concern for domestic violence survivors or anyone dealing with harassment.</p>
-    <p style="margin-top:0.75rem">Some insurers even use data broker profiles to adjust premiums. And scammers use your personal details to craft phishing emails that are disturbingly specific — they'll reference your actual employer, your neighborhood, your recent purchases. The more they know about you, the more convincing the scam.</p>
   </div>
 
-  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+  <!-- CALLOUT BOX -->
+  <div class="callout-warning callout-box gs-fade-up">
+    <strong>Why this actually matters:</strong> Data brokers are the #1 source of phone numbers for robocallers. They make identity theft easier by exposing your security question answers. Some insurers use broker profiles to adjust your premiums. And scammers use your details to craft phishing emails that reference your actual employer and neighborhood.
+  </div>
+
+  <!-- IMAGE BREAK -->
+  <div class="img-break gs-fade-up">
+    <img src="img/100.jpg" alt="Laptop on desk">
+    <div class="img-overlay">
+      <p>Your laptop generates data every time you connect. Data brokers are collecting it.</p>
+    </div>
+  </div>
+
+  <div class="divider" style="margin:2rem auto"></div>
+
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:2rem auto 2rem;line-height:1.8">
     <h2 style="font-size:1.5rem;margin-bottom:1rem">Can You Do This Yourself? (Yes, but...)</h2>
     <p>Technically, yes. Under the CCPA in California and GDPR in Europe, data brokers are legally required to honor opt-out requests. I tried doing this manually for about a dozen sites — here's what that actually looks like in practice:</p>
     <p style="margin-top:1rem">You Google your name, find your profile on Spokeo, dig around their site for the opt-out page (it's buried), submit a removal request, verify your email, and then wait 2-6 weeks. Then you do the same thing on WhitePages. Then BeenVerified. Then Intelius. Then TruePeopleSearch. You get the idea. There are hundreds of these sites.</p>
     <p style="margin-top:1rem">I got through maybe 8 before I ran out of patience. Some wanted a photo of my government ID just to process the request, which felt ironic — handing over more personal data to get my personal data removed.</p>
-    <p style="margin-top:1rem">The real kicker: about three months later, I checked Spokeo again. My profile was back. Brokers constantly re-scrape public records and buy fresh data sets, so removal is never a one-time thing. You'd need to repeat this process every few months, across hundreds of sites, basically forever. That's when I started looking into services that automate it.</p>
   </div>
+
+  <div class="callout-info callout-box gs-fade-up">
+    <strong>The real kicker:</strong> About three months later, I checked Spokeo again. My profile was back. Brokers constantly re-scrape public records and buy fresh data sets, so removal is never a one-time thing. You'd need to repeat this process every few months, across hundreds of sites, basically forever.
+  </div>
+
+  <!-- INCOGNI BANNER -->
+  <div class="banner-break gs-fade-up">
+    <a href="https://www.kqzyfj.com/click-101818803-15718671" target="_blank" rel="nofollow noopener" class="incogni-banner">
+      <img src="https://www.tqlkg.com/image-101818803-15718671" width="468" height="60" alt="Incogni - Personal Data Removal Service" style="border-radius:8px">
+    </a>
+  </div>
+
+  <div class="divider" style="margin:1rem auto 2rem"></div>
 
   <h2 class="section-title gs-fade-up" style="margin-bottom:2rem">The Better Option: Automate It</h2>
 
   <div class="product-list">
-
     <article class="product-card gs-fade-up">
       <div class="product-body" style="flex:1;max-width:100%">
         <span class="product-badge">Recommended</span>
@@ -109,26 +171,63 @@
         <a href="https://deal.incogni.io/aff_c?offer_id=11&aff_id=1505" class="btn" target="_blank" rel="nofollow noopener" id="incogni-cta">Try Incogni &rarr;</a>
       </div>
     </article>
-
   </div>
 </main>
 
-<section class="section" style="padding-top:0">
-  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
-    <h2 style="font-size:1.5rem;margin-bottom:1rem">How It Actually Works</h2>
-    <p>You give Incogni the basics — name, email, home address. Yes, it feels a little weird handing that info to yet another company, but they need it to find your profiles on broker sites. It's the same info those brokers already have anyway.</p>
-    <p style="margin-top:1rem">From there, Incogni fires off legally-backed removal requests using CCPA, GDPR, and other privacy regulations. These aren't polite "please remove me" emails — they're formal demands that cite specific laws. Brokers are required to comply, and most do within a few weeks.</p>
-    <p style="margin-top:1rem">The dashboard is genuinely useful. You can see exactly which brokers had your data, which requests are pending, and which are complete. I was surprised to find my info on sites I'd never heard of — some niche people-search engines I wouldn't have known to check manually.</p>
-    <p style="margin-top:1rem">The real value is the ongoing monitoring. Data brokers don't just give up after one removal. They re-scrape public records, buy updated data sets, and your profile comes back. Incogni watches for that and automatically re-submits removal requests when it happens. That's what makes the subscription worth it — this isn't a problem you solve once.</p>
+<!-- HOW IT WORKS — STEP CARDS -->
+<section class="section" style="padding-top:1rem">
+  <h2 class="section-title gs-fade-up" style="margin-bottom:.5rem">How It Actually Works</h2>
+  <p class="section-subtitle gs-fade-up" style="margin-bottom:2rem">Four steps. Two minutes of your time.</p>
+
+  <div class="step-grid gs-fade-up">
+    <div class="step-item">
+      <div class="step-num">1</div>
+      <h4>Sign Up</h4>
+      <p>Provide your name, email, and address. Incogni needs this to find your profiles on broker sites — the same info they already have.</p>
+    </div>
+    <div class="step-item">
+      <div class="step-num">2</div>
+      <h4>Automated Requests</h4>
+      <p>Incogni sends legally-backed removal demands citing CCPA, GDPR, and other privacy laws. Not polite asks — formal demands.</p>
+    </div>
+    <div class="step-item">
+      <div class="step-num">3</div>
+      <h4>Track Progress</h4>
+      <p>Watch your dashboard as brokers comply. See which ones had your data, which requests are pending, and which are done.</p>
+    </div>
+    <div class="step-item">
+      <div class="step-num">4</div>
+      <h4>Ongoing Monitoring</h4>
+      <p>Brokers re-scrape and re-list your data. Incogni watches for that and automatically re-submits removal requests.</p>
+    </div>
+  </div>
+
+  <!-- SECOND BANNER -->
+  <div class="banner-break gs-fade-up">
+    <a href="https://www.kqzyfj.com/click-101818803-15718671" target="_blank" rel="nofollow noopener" class="incogni-banner">
+      <img src="https://www.tqlkg.com/image-101818803-15718671" width="468" height="60" alt="Incogni - Remove Your Personal Data" style="border-radius:8px">
+    </a>
   </div>
 </section>
 
-<section class="section" style="padding-top:0">
-  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 3rem;line-height:1.8">
+<!-- IMAGE BREAK 2 -->
+<div class="img-break gs-fade-up" style="margin:0 auto 2rem">
+  <img src="img/105.jpg" alt="Laptop security">
+  <div class="img-overlay">
+    <p>A VPN blocks new data collection. Incogni cleans up what's already out there.</p>
+  </div>
+</div>
+
+<section class="section" style="padding-top:1rem">
+  <div class="guide-intro gs-fade-up" style="max-width:800px;margin:0 auto 2rem;line-height:1.8">
     <h2 style="font-size:1.5rem;margin-bottom:1rem">This Is Only Half the Equation</h2>
     <p>Removing your existing data is important, but it doesn't stop new data from being collected. Every time you connect to public WiFi without a VPN, browse without encryption, or let your ISP log your activity, you're feeding the same pipeline that put your info on those broker sites in the first place.</p>
     <p style="margin-top:1rem">Think of it this way: a data removal service cleans up the mess that already exists. A VPN prevents new messes from being created. Running one without the other is like mopping the floor while the faucet's still running.</p>
     <p style="margin-top:1rem">If you haven't set one up yet, check out our <a href="best-vpn-for-laptops.html" style="color:#4a6cf7;text-decoration:underline">Best VPN for Laptops</a> guide. Between a VPN and a data removal service, you've covered both sides — blocking new data collection and cleaning up what's already out there.</p>
+  </div>
+
+  <div style="text-align:center;margin-bottom:2rem" class="gs-fade-up">
+    <a href="https://deal.incogni.io/aff_c?offer_id=11&aff_id=1505" class="btn" target="_blank" rel="nofollow noopener" id="incogni-cta-bottom" style="font-size:1.1rem;padding:.9rem 2.5rem">Remove Your Data Now &rarr;</a>
   </div>
 </section>
 
@@ -180,18 +279,18 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray('.page-intro-content .gs-fade-up').forEach((el, i) => {
   gsap.fromTo(el, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.8, delay: 0.15 + (i * 0.12), ease: 'power3.out' });
 });
-gsap.utils.toArray('.product-card, .section .gs-fade-up').forEach((el) => {
+gsap.utils.toArray('.product-card, .section .gs-fade-up, .stat-grid, .step-grid, .img-break, .callout-box, .banner-break').forEach((el) => {
   gsap.fromTo(el, { opacity: 0, y: 50, scale: 0.97 },
     { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' } });
 });
 </script>
 <script>
-document.querySelectorAll('a[href*="amazon.com"], #nordvpn-cta, #incogni-cta').forEach(function(link) {
+document.querySelectorAll('a[href*="amazon.com"], #nordvpn-cta, #incogni-cta, #incogni-cta-bottom, .incogni-banner').forEach(function(link) {
   link.addEventListener('click', function() {
     if (typeof gtag === 'function') {
       gtag('event', 'affiliate_click', {
-        'link_text': link.innerText.trim().substring(0, 50),
+        'link_text': (link.innerText || 'Incogni Banner').trim().substring(0, 50),
         'page_path': window.location.pathname
       });
     }
