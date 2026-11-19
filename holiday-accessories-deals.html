@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .acc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;margin:1.5rem 0 3rem}
+    .acc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;margin:1.5rem 0 3rem}
     .acc-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:1.5rem;transition:border-color .25s}
     .acc-card:hover{border-color:rgba(245,175,25,.3)}
     .acc-card h4{font-size:1.05rem;margin-bottom:.5rem}
@@ -32,7 +32,7 @@
     .acc-card .acc-was{color:#888;font-size:.85rem;text-decoration:line-through;margin-left:8px;font-weight:400}
     .acc-card .acc-save{display:inline-block;background:rgba(76,175,80,.12);color:#81c784;font-size:.78rem;font-weight:600;padding:2px 8px;border-radius:10px;margin-left:8px}
     .acc-card p{font-size:.9rem;color:#aaa;line-height:1.6;margin-bottom:.85rem}
-    .acc-card .btn{font-size:.85rem;padding:8px 18px}
+    .acc-card .btn{font-size:.85rem;padding:10px 20px}
     .acc-card .acc-pairs{font-size:.8rem;color:#888;margin-top:.6rem;padding-top:.6rem;border-top:1px solid rgba(255,255,255,.06)}
     .acc-card .acc-pairs strong{color:#aaa}
     .cat-jump{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:2rem auto 3rem;max-width:900px}
@@ -41,6 +41,7 @@
     .section-divider{text-align:center;margin:3.5rem auto 1rem;position:relative}
     .section-divider::before{content:'';position:absolute;top:50%;left:0;right:0;height:1px;background:rgba(255,255,255,.08)}
     .section-divider span{background:var(--bg,#0a0a0a);padding:0 1.5rem;position:relative;color:#666;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
+    @media(max-width:480px){.acc-card{padding:1rem}.cat-jump a{padding:10px 16px;font-size:.82rem}}
   </style>
 </head>
 <body>
